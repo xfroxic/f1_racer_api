@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>F1 Racer Standings</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="/main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div>
+            <col>
+            <form name="data" id="dataForm">
+                <label for="season">Season (Year) </label>
+                <input type="text" name="season" id="season">
+                
+                <label for="round">Round</label>
+                <input type="text" name="round" id="round">
+                
+                <button class="btn btn-secondary" type="submit" id="submitButton">Get Standings</button>
+                <button class="btn btn-danger" type="reset" id="resetButton">Clear Standings</button>
+            </form>
+        </div>
+    </header>
+    <br>
+    <br>
+    <table class="table standings-table" id="standingsTable">
+        <tr>
+            <td>#</td>
+            <td>First Name</td>
+            <td>Last Name</td>
+            <td>Sponsor</td>
+            <td>Nationality</td>
+            <td>Points</td>
+        </tr>
+    </table>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
